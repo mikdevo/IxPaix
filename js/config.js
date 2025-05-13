@@ -43,12 +43,12 @@ const config = {
     ],
     
     colors: {
-        primary: "#6610f2", // Indigo
-        secondary: "#7952b3", // Medium indigo
-        accent: "#a991d4", // Light indigo
-        background: "#1a0933", // Deep indigo
-        text: "#e9e4f0", // Light grey/indigo for text
-        cardBackground: "#2d1159" // Slightly lighter indigo for cards
+        primary: "#8D9566", // Olive green
+        secondary: "#B6C0A3", // Muted sage
+        accent: "#C5CBA3", // Sage green
+        background: "#0a1929", // Dark blue-black
+        text: "#E6E6E6", // Light gray
+        cardBackground: "#112240" // Dark blue
     },
     
     translations: {
