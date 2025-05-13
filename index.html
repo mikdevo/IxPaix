@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IxPaix | Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+    <div class="page-loader" id="pageLoader">
+        <div class="loader-content">
+            <div class="loader-spinner"></div>
+            <div class="loader-text">Loading IxPaix's World...</div>
+        </div>
+    </div>
+
+    <div class="particles-container" id="particles-js"></div>
+
+    <div class="portfolio-container">
+        <div class="profile-card glass-effect">
+            <div class="language-toggle">
+                <button id="langToggle" class="lang-toggle-btn" aria-label="Toggle language">
+                    <i class="fas fa-globe"></i>
+                </button>
+                <div class="language-menu" id="languageMenu">
+                    <div class="language-menu-item active" data-lang="en">
+                        <i class="fas fa-check"></i>
+                        <span>English</span>
+                    </div>
+                    <div class="language-menu-item" data-lang="de">
+                        <i class="fas fa-check"></i>
+                        <span>Deutsch</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="theme-toggle">
+                <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle dark/light mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            
+            <div class="profile-header">
+                <div class="profile-img-container">
+                    <img id="profileImage" src="images/default-avatar.png" alt="IxPaix" class="profile-img">
+                    <div class="profile-img-border"></div>
+                </div>
+                <h1 class="profile-name">IxPaix</h1>
+                <p class="profile-tagline" data-i18n="tagline">V-Tuber • Gamer • Pianist</p>
+            </div>
+            
+            <div class="pronouns-badge">
+                <i class="fas fa-user"></i> <span data-i18n="pronouns">he/him/she/her</span>
+            </div>
+            
+            <div class="profile-bio">
+                <p class="bio-text" data-i18n="shortBio">18 • Engaged • Pianist • Gamer • German • Lower Saxony</p>
+            </div>
+            
+            <div class="social-container">
+                <h3 class="social-heading" data-i18n="findMeOnline">Find Me Online</h3>
+                <div class="social-links">
+                    <a href="https://www.twitch.tv/ixpaix" id="twitchLink" class="social-icon" target="_blank" data-tooltip="Twitch"><i class="fab fa-twitch"></i></a>
+                    <a href="https://www.tiktok.com/@ix_paix" id="tiktokLink" class="social-icon" target="_blank" data-tooltip="TikTok"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://discord.gg/nSep9TvJ" id="discordLink" class="social-icon" target="_blank" data-tooltip="Discord"><i class="fab fa-discord"></i></a>
+                    <a href="https://open.spotify.com/user/qt5162s59sdwtblku2a2e0b4m" id="spotifyLink" class="social-icon" target="_blank" data-tooltip="Spotify"><i class="fab fa-spotify"></i></a>
+                    <a href="https://steamcommunity.com/profiles/76561199031845652" id="steamLink" class="social-icon" target="_blank" data-tooltip="Steam"><i class="fab fa-steam"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="content-area">
+            <section class="welcome-section section glass-effect">
+                <h2 class="section-title" data-i18n="welcomeTitle">Welcome to my world <span class="accent-emoji">✨</span></h2>
+                <div class="welcome-content">
+                    <p>Welcome to my world as a V-Tuber! 😊 Here it's all about gaming and community. I offer a safe space for everyone looking for fun and support. ❤️</p>
+                    <p>I love playing a variety of games and connecting with viewers. Whether you're here for gameplay, chat, or just to hang out, you're always welcome!</p>
+                    <p>When I'm not streaming, I enjoy playing piano, exploring new games, and spending time with my partner. My community means everything to me!</p>
+                    <p>Come by, grab a snack, and let's laugh and play together! 😉 Your company matters to me! 🤭</p>
+                </div>
+            </section>
+            
+            <section class="games-section section glass-effect">
+                <h2 class="section-title" data-i18n="gamesTitle">Favorite Games <span class="accent-emoji">🎮</span></h2>
+                <div class="games-grid">
+                    <div class="game-card">
+                        <div class="game-image">
+                            <img src="images/game1.jpg" alt="Skyrim">
+                            <div class="game-overlay">
+                                <div class="game-info">
+                                    <h3 data-i18n="game1Name">Skyrim</h3>
+                                    <p data-i18n="game1Type">RPG</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="game-card">
+                        <div class="game-image">
+                            <img src="images/game2.jpg" alt="Stardew Valley">
+                            <div class="game-overlay">
+                                <div class="game-info">
+                                    <h3 data-i18n="game2Name">Stardew Valley</h3>
+                                    <p data-i18n="game2Type">Farming Sim</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="game-card">
+                        <div class="game-image">
+                            <img src="images/game3.jpg" alt="Minecraft">
+                            <div class="game-overlay">
+                                <div class="game-info">
+                                    <h3 data-i18n="game3Name">Minecraft</h3>
+                                    <p data-i18n="game3Type">Sandbox</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="game-card">
+                        <div class="game-image">
+                            <img src="images/game4.jpg" alt="Sims 4">
+                            <div class="game-overlay">
+                                <div class="game-info">
+                                    <h3 data-i18n="game4Name">Sims 4</h3>
+                                    <p data-i18n="game4Type">Life Sim</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="twitch-section section glass-effect">
+                <h2 class="section-title" data-i18n="streamTitle">Stream Status <span class="accent-emoji">📹</span></h2>
+                <div class="twitch-status-card">
+                    <div id="twitchStatus" class="status-indicator offline">
+                        <span id="statusText">Checking status...</span>
+                    </div>
+                    <div class="twitch-embed" id="twitchEmbed" style="display: none;">
+                    </div>
+                    <div class="twitch-offline-message" id="twitchOffline">
+                        <p data-i18n="streamOffline">I'm not streaming right now, but check back soon!</p>
+                        <a href="#" id="twitchChannelLink" class="btn-primary" target="_blank" data-i18n="visitChannel">Visit My Channel</a>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="tiktok-stream-section section glass-effect">
+                <h2 class="section-title" data-i18n="tiktokStreamTitle">TikTok Live Status <span class="accent-emoji">📱</span></h2>
+                <div class="tiktok-status-card">
+                    <div id="tiktokStatus" class="status-indicator offline">
+                        <span id="tiktokStatusText">Checking status...</span>
+                    </div>
+                    <div class="tiktok-embed" id="tiktokEmbed" style="display: none;">
+                    </div>
+                    <div class="tiktok-offline-message" id="tiktokOffline">
+                        <p data-i18n="tiktokStreamOffline">I'm not streaming on TikTok right now, but check back soon!</p>
+                        <a href="#" id="tiktokChannelLink" class="btn-primary" target="_blank" data-i18n="visitTiktokChannel">Visit My TikTok</a>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="contact-section section glass-effect">
+                <h2 class="section-title" data-i18n="contactTitle">Get In Touch <span class="accent-emoji">✉️</span></h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3 data-i18n="contactInfo">Contact Information</h3>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div class="contact-text">
+                                <h4 data-i18n="emailTitle">Email</h4>
+                                <p>contact@ixpaix.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-platforms">
+                        <h3 data-i18n="bestWays">Best ways to reach me:</h3>
+                        <div class="platform-links">
+                            <a href="https://discord.gg/nSep9TvJ" class="platform-link discord" data-i18n="instagramDM">
+                                <i class="fab fa-discord"></i> Discord
+                            </a>
+                            <a href="mailto:contact@ixpaix.com" class="platform-link email" data-i18n="emailContact">
+                                <i class="fas fa-envelope"></i> Email
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="donation-section section glass-effect">
+                <h2 class="section-title" data-i18n="supportTitle">Support My Content <span class="accent-emoji">💝</span></h2>
+                <div class="donation-content">
+                    <div class="donation-text">
+                        <p data-i18n="supportText">If you enjoy my content and want to support me, consider leaving a tip! Your support helps me create better content and improve my streams.</p>
+                    </div>
+                    <div class="donation-cta">
+                        <a href="https://www.twitch.tv/ixpaix" class="btn-primary donation-btn" target="_blank">
+                            <i class="fas fa-heart"></i> <span data-i18n="supportBtn">Support Me</span>
+                        </a>
+                    </div>
+                    <div class="donation-benefits">
+                        <div class="benefit-item">
+                            <i class="fas fa-star"></i>
+                            <span data-i18n="benefitEquipment">Support new equipment</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-gamepad"></i>
+                            <span data-i18n="benefitGames">Help with game purchases</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-smile"></i>
+                            <span data-i18n="benefitHappy">Make IxPaix happy!</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    
+    <footer class="footer glass-effect">
+        <p>&copy; <span id="currentYear"></span> IxPaix. <span data-i18n="allRights">All rights reserved.</span></p>
+        <div class="footer-links">
+            <a href="#" class="footer-link" data-i18n="privacy">Privacy Policy</a>
+            <span class="divider">•</span>
+            <a href="mailto:contact@ixpaix.com" class="footer-link" data-i18n="contact">Contact</a>
+            <span class="divider">•</span>
+            <a href="#" class="footer-link" data-i18n="terms">Terms of Service</a>
+        </div>
+    </footer>
+    
+    <script src="js/config.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    
+    <script>
+        const pageLoader = document.getElementById('pageLoader');
+        if (pageLoader) {
+            setTimeout(function() {
+                pageLoader.style.opacity = '0';
+                setTimeout(function() {
+                    pageLoader.style.display = 'none';
+                }, 500);
+            }, 800);
+        }
+        
+        const themeToggle = document.getElementById('themeToggle');
+        if (themeToggle) {
+            themeToggle.addEventListener('click', function() {
+                document.body.classList.toggle('light-theme');
+                const icon = this.querySelector('i');
+                if (icon) {
+                    if (document.body.classList.contains('light-theme')) {
+                        icon.className = 'fas fa-sun';
+                    } else {
+                        icon.className = 'fas fa-moon';
+                    }
+                }
+            });
+        }
+        
+        const tabBtns = document.querySelectorAll('.tab-btn');
+        const tabContents = document.querySelectorAll('.tab-content');
+        
+        tabBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                tabBtns.forEach(b => b.classList.remove('active'));
+                tabContents.forEach(c => c.classList.remove('active'));
+                
+                btn.classList.add('active');
+                const tabId = btn.getAttribute('data-tab');
+                document.getElementById(tabId).classList.add('active');
+            });
+        });
+        
+        if (typeof particlesJS !== 'undefined') {
+            particlesJS('particles-js', {
+                particles: {
+                    number: { value: 80, density: { enable: true, value_area: 800 } },
+                    color: { value: "#6610f2" },
+                    shape: { type: "circle" },
+                    opacity: { value: 0.5, random: true },
+                    size: { value: 3, random: true },
+                    line_linked: {
+                        enable: true,
+                        distance: 150,
+                        color: "#7952b3",
+                        opacity: 0.2,
+                        width: 1
+                    },
+                    move: {
+                        enable: true,
+                        speed: 2,
+                        direction: "none",
+                        random: true,
+                        straight: false,
+                        out_mode: "out",
+                        bounce: false
+                    }
+                },
+                interactivity: {
+                    detect_on: "canvas",
+                    events: {
+                        onhover: { enable: true, mode: "grab" },
+                        onclick: { enable: true, mode: "push" },
+                        resize: true
+                    }
+                },
+                retina_detect: true
+            });
+        }
+    </script>
+</body>
+</html>
