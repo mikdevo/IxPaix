@@ -65,7 +65,7 @@ function loadInstagramPhotos() {
         photoElement.className = 'instagram-item';
         photoElement.style.opacity = '0';
         
-        photoElement.style.backgroundColor = 'rgba(106, 16, 242, 0.1)';
+        photoElement.style.backgroundColor = 'rgba(141, 149, 102, 0.1)';
         
         const img = document.createElement('img');
         img.alt = 'Instagram Photo';
